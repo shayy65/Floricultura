@@ -44,12 +44,13 @@
             this.txt_ID = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_formapagamento = new System.Windows.Forms.TextBox();
             this.dataGrid_venda = new System.Windows.Forms.DataGridView();
             this.bt_finalizar = new System.Windows.Forms.Button();
             this.bt_limpar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.mask_datahora = new System.Windows.Forms.MaskedTextBox();
+            this.bt_voltar = new System.Windows.Forms.Button();
+            this.cbox_formapag = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_venda)).BeginInit();
             this.SuspendLayout();
             // 
@@ -207,6 +208,7 @@
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 39);
             this.txt_ID.TabIndex = 16;
+            this.txt_ID.TextChanged += new System.EventHandler(this.txt_ID_TextChanged);
             // 
             // label8
             // 
@@ -233,15 +235,6 @@
             this.label9.Size = new System.Drawing.Size(159, 33);
             this.label9.TabIndex = 33;
             this.label9.Text = "Data e hora:";
-            // 
-            // txt_formapagamento
-            // 
-            this.txt_formapagamento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_formapagamento.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_formapagamento.Location = new System.Drawing.Point(779, 476);
-            this.txt_formapagamento.Name = "txt_formapagamento";
-            this.txt_formapagamento.Size = new System.Drawing.Size(293, 39);
-            this.txt_formapagamento.TabIndex = 32;
             // 
             // dataGrid_venda
             // 
@@ -291,7 +284,7 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Location = new System.Drawing.Point(682, 179);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(141, 51);
+            this.label10.Size = new System.Drawing.Size(139, 49);
             this.label10.TabIndex = 38;
             this.label10.Text = "Venda ";
             // 
@@ -305,6 +298,36 @@
             this.mask_datahora.Size = new System.Drawing.Size(231, 39);
             this.mask_datahora.TabIndex = 39;
             // 
+            // bt_voltar
+            // 
+            this.bt_voltar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_voltar.BackColor = System.Drawing.Color.White;
+            this.bt_voltar.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_voltar.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.bt_voltar.Location = new System.Drawing.Point(448, 549);
+            this.bt_voltar.Name = "bt_voltar";
+            this.bt_voltar.Size = new System.Drawing.Size(163, 47);
+            this.bt_voltar.TabIndex = 40;
+            this.bt_voltar.Text = "Voltar";
+            this.bt_voltar.UseVisualStyleBackColor = false;
+            this.bt_voltar.Click += new System.EventHandler(this.bt_voltar_Click);
+            // 
+            // cbox_formapag
+            // 
+            this.cbox_formapag.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbox_formapag.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_formapag.FormattingEnabled = true;
+            this.cbox_formapag.Items.AddRange(new object[] {
+            "Pix",
+            "Boleto",
+            "Cartão de crédito",
+            "Cartão de débito",
+            "Dinheiro"});
+            this.cbox_formapag.Location = new System.Drawing.Point(795, 475);
+            this.cbox_formapag.Name = "cbox_formapag";
+            this.cbox_formapag.Size = new System.Drawing.Size(277, 39);
+            this.cbox_formapag.TabIndex = 41;
+            // 
             // Venda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -312,13 +335,14 @@
             this.BackgroundImage = global::Floricultura.Properties.Resources.Rua_Alegre__123___Cidade_Brasileira_ola_grandesite_com_br__12__3456_7890_www_grandesite_com_br__10_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1459, 826);
+            this.Controls.Add(this.cbox_formapag);
+            this.Controls.Add(this.bt_voltar);
             this.Controls.Add(this.mask_datahora);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.bt_finalizar);
             this.Controls.Add(this.bt_limpar);
             this.Controls.Add(this.dataGrid_venda);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txt_formapagamento);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -360,11 +384,12 @@
         private System.Windows.Forms.TextBox txt_ID;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt_formapagamento;
         private System.Windows.Forms.DataGridView dataGrid_venda;
         private System.Windows.Forms.Button bt_finalizar;
         private System.Windows.Forms.Button bt_limpar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.MaskedTextBox mask_datahora;
+        private System.Windows.Forms.Button bt_voltar;
+        private System.Windows.Forms.ComboBox cbox_formapag;
     }
 }

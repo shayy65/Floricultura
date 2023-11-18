@@ -34,15 +34,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.txt_emailcliente = new System.Windows.Forms.TextBox();
             this.txt_enderecocliente = new System.Windows.Forms.TextBox();
             this.txt_nomecliente = new System.Windows.Forms.TextBox();
             this.txt_cpfcliente = new System.Windows.Forms.TextBox();
             this.txt_telefonecliente = new System.Windows.Forms.TextBox();
-            this.txt_idcliente = new System.Windows.Forms.TextBox();
             this.bt_limpar = new System.Windows.Forms.Button();
             this.bt_cadastrar = new System.Windows.Forms.Button();
+            this.bt_voltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -52,7 +51,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(547, 256);
+            this.label1.Location = new System.Drawing.Point(327, 256);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 33);
             this.label1.TabIndex = 4;
@@ -127,20 +126,6 @@
             this.label6.Text = "E-mail:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(364, 256);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 33);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "ID:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
             // txt_emailcliente
             // 
             this.txt_emailcliente.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -165,9 +150,9 @@
             // 
             this.txt_nomecliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_nomecliente.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nomecliente.Location = new System.Drawing.Point(639, 253);
+            this.txt_nomecliente.Location = new System.Drawing.Point(420, 253);
             this.txt_nomecliente.Name = "txt_nomecliente";
-            this.txt_nomecliente.Size = new System.Drawing.Size(609, 39);
+            this.txt_nomecliente.Size = new System.Drawing.Size(828, 39);
             this.txt_nomecliente.TabIndex = 0;
             // 
             // txt_cpfcliente
@@ -187,15 +172,6 @@
             this.txt_telefonecliente.Name = "txt_telefonecliente";
             this.txt_telefonecliente.Size = new System.Drawing.Size(208, 39);
             this.txt_telefonecliente.TabIndex = 3;
-            // 
-            // txt_idcliente
-            // 
-            this.txt_idcliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_idcliente.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idcliente.Location = new System.Drawing.Point(420, 253);
-            this.txt_idcliente.Name = "txt_idcliente";
-            this.txt_idcliente.Size = new System.Drawing.Size(122, 39);
-            this.txt_idcliente.TabIndex = 9;
             // 
             // bt_limpar
             // 
@@ -223,6 +199,20 @@
             this.bt_cadastrar.UseVisualStyleBackColor = true;
             this.bt_cadastrar.Click += new System.EventHandler(this.bt_cadastrar_Click);
             // 
+            // bt_voltar
+            // 
+            this.bt_voltar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_voltar.BackColor = System.Drawing.Color.White;
+            this.bt_voltar.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_voltar.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.bt_voltar.Location = new System.Drawing.Point(420, 478);
+            this.bt_voltar.Name = "bt_voltar";
+            this.bt_voltar.Size = new System.Drawing.Size(163, 47);
+            this.bt_voltar.TabIndex = 33;
+            this.bt_voltar.Text = "Voltar";
+            this.bt_voltar.UseVisualStyleBackColor = false;
+            this.bt_voltar.Click += new System.EventHandler(this.bt_voltar_Click);
+            // 
             // CadastroClien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -230,12 +220,11 @@
             this.BackgroundImage = global::Floricultura.Properties.Resources.Rua_Alegre__123___Cidade_Brasileira_ola_grandesite_com_br__12__3456_7890_www_grandesite_com_br__6_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1260, 603);
+            this.Controls.Add(this.bt_voltar);
             this.Controls.Add(this.bt_cadastrar);
             this.Controls.Add(this.bt_limpar);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_emailcliente);
-            this.Controls.Add(this.txt_idcliente);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -261,14 +250,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_emailcliente;
         private System.Windows.Forms.TextBox txt_enderecocliente;
         private System.Windows.Forms.TextBox txt_nomecliente;
         private System.Windows.Forms.TextBox txt_cpfcliente;
         private System.Windows.Forms.TextBox txt_telefonecliente;
-        private System.Windows.Forms.TextBox txt_idcliente;
         private System.Windows.Forms.Button bt_limpar;
         private System.Windows.Forms.Button bt_cadastrar;
+        private System.Windows.Forms.Button bt_voltar;
     }
 }

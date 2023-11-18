@@ -14,11 +14,18 @@ namespace Floricultura
     public partial class CadastroClien : Form
     {
         List<Cliente> clientes = new List<Cliente>();
-        public CadastroClien()
+        List<Funcionario> funcionarios = new List<Funcionario>();
+        List<Produto> produtos = new List<Produto>();
+        List<VendaF> vendas = new List<VendaF>();
+        public CadastroClien(List<Cliente> lclientes, List<Funcionario> lfuncionarios, List<Produto> lprodutos, List<VendaF> lvendas)
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
-            
+            clientes = lclientes;
+            funcionarios = lfuncionarios;
+            produtos = lprodutos;
+            vendas = lvendas;
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -74,7 +81,7 @@ namespace Floricultura
         private void bt_cadastrar_Click(object sender, EventArgs e)
         {
             Cliente cliente = new Cliente();
-            cliente.ClienteID = Convert.ToInt32(txt_idcliente.Text);
+            cliente.ClienteID = ((clientes.Last().ClienteID) + 1);
             cliente.Nome = txt_nomecliente.Text;
             cliente.CPF = txt_cpfcliente.Text;
             cliente.Email = txt_emailcliente.Text;
@@ -87,11 +94,17 @@ namespace Floricultura
         private void bt_limpar_Click(object sender, EventArgs e)
         {
             txt_nomecliente.Clear();
-            txt_idcliente.Clear();
             txt_cpfcliente.Clear();
             txt_emailcliente.Clear();
             txt_enderecocliente.Clear();
             txt_telefonecliente.Clear();
+        }
+
+        private void bt_voltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuF menu = new MenuF(clientes, funcionarios, produtos, vendas);
+            menu.ShowDialog();
         }
     }
 }

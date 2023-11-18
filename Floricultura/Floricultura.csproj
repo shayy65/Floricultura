@@ -67,12 +67,11 @@
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\Funcionário.cs" />
     <Compile Include="Classes\Produto.cs" />
-    <Compile Include="Classes\Venda.cs" />
-    <Compile Include="Telas\Form1.cs">
+    <Compile Include="Telas\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Telas\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Login.cs">
       <SubType>Form</SubType>
@@ -80,11 +79,11 @@
     <Compile Include="Telas\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Menu.cs">
+    <Compile Include="Telas\MenuF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="Telas\MenuF.Designer.cs">
+      <DependentUpon>MenuF.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,6 +93,7 @@
     <Compile Include="Telas\Venda.Designer.cs">
       <DependentUpon>Venda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\VendaF.cs" />
     <EmbeddedResource Include="Telas\CadastrarFunc.resx">
       <DependentUpon>CadastrarFunc.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,14 +103,14 @@
     <EmbeddedResource Include="Telas\CadastroClien.resx">
       <DependentUpon>CadastroClien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\MenuF.resx">
+      <DependentUpon>MenuF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

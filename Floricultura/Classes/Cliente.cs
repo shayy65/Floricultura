@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Floricultura.classes
 {
-    internal class Cliente
+    public class Cliente
     {
             public int ClienteID { get; set; }
             public string Nome { get; set; }

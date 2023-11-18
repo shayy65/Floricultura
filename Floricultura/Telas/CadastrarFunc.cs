@@ -13,33 +13,19 @@ namespace Floricultura
 {
     public partial class CadastrarFunc : Form
     {
+        List<Cliente> clientes = new List<Cliente>();
         List<Funcionario> funcionarios = new List<Funcionario>();
-        Login login = new Login();
-        public CadastrarFunc()
+        List<Produto> produtos = new List<Produto>();
+        List<VendaF> vendas = new List<VendaF>();
+        public CadastrarFunc(List<Cliente> lclientes, List<Funcionario> lfuncionarios, List<Produto> lprodutos, List<VendaF> lvendas)
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
-        }
-        
-        
-        public bool Verificarusuario(string usuariologin, string senhalogin)
-        {
-            Funcionario adm = new Funcionario();
-            adm.Usuario = "administrador";
-            adm.Senha = "senha";
+            clientes = lclientes;
+            funcionarios = lfuncionarios;
+            produtos = lprodutos;
+            vendas = lvendas;
 
-            funcionarios.Add(adm);
-
-            foreach (var funcionario in funcionarios)
-            {
-                if (usuariologin == funcionario.Usuario && senhalogin == funcionario.Senha)
-                {
-                    return true; 
-                }
-                
-            }
-            return false;
-            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -64,7 +50,6 @@ namespace Floricultura
 
         private void bt_limpar_Click(object sender, EventArgs e)
         {
-            txt_idfuncionario.Clear();
             txt_nomefuncionario.Clear();
             mask_cpffuncionario.Clear();
             txt_rgfuncionario.Clear();
@@ -88,7 +73,7 @@ namespace Floricultura
         {
             
             Funcionario funcionario = new Funcionario();
-            funcionario.FuncionarioID = Convert.ToInt32(txt_idfuncionario.Text);
+            funcionario.FuncionarioID = ((funcionarios.Last().FuncionarioID)+1);
             funcionario.Nome = txt_nomefuncionario.Text;
             funcionario.CPF = mask_cpffuncionario.Text;
             funcionario.RG = txt_rgfuncionario.Text;
@@ -104,15 +89,13 @@ namespace Floricultura
 
             funcionarios.Add(funcionario);
 
-            foreach(Funcionario f in funcionarios)
-            {
-                MessageBox.Show($"{f.Nome}");
-            }
-           
-
-
-            
         }
 
+        private void bt_voltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuF menu = new MenuF(clientes, funcionarios, produtos, vendas);
+            menu.ShowDialog();
+        }
     }
 }

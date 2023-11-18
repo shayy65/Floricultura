@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_idfuncionario = new System.Windows.Forms.TextBox();
             this.txt_nomefuncionario = new System.Windows.Forms.TextBox();
             this.txt_rgfuncionario = new System.Windows.Forms.TextBox();
             this.txt_ctpsfuncionario = new System.Windows.Forms.TextBox();
@@ -37,7 +36,6 @@
             this.txt_salario = new System.Windows.Forms.TextBox();
             this.txt_emailfuncionario = new System.Windows.Forms.TextBox();
             this.txt_enderecofuncionario = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,24 +55,16 @@
             this.label14 = new System.Windows.Forms.Label();
             this.bt_limpar = new System.Windows.Forms.Button();
             this.bt_cadastrar = new System.Windows.Forms.Button();
+            this.bt_voltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // txt_idfuncionario
-            // 
-            this.txt_idfuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_idfuncionario.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idfuncionario.Location = new System.Drawing.Point(501, 197);
-            this.txt_idfuncionario.Name = "txt_idfuncionario";
-            this.txt_idfuncionario.Size = new System.Drawing.Size(99, 39);
-            this.txt_idfuncionario.TabIndex = 0;
             // 
             // txt_nomefuncionario
             // 
             this.txt_nomefuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_nomefuncionario.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nomefuncionario.Location = new System.Drawing.Point(701, 200);
+            this.txt_nomefuncionario.Location = new System.Drawing.Point(497, 200);
             this.txt_nomefuncionario.Name = "txt_nomefuncionario";
-            this.txt_nomefuncionario.Size = new System.Drawing.Size(566, 39);
+            this.txt_nomefuncionario.Size = new System.Drawing.Size(770, 39);
             this.txt_nomefuncionario.TabIndex = 1;
             // 
             // txt_rgfuncionario
@@ -141,20 +131,6 @@
             this.txt_enderecofuncionario.Size = new System.Drawing.Size(770, 39);
             this.txt_enderecofuncionario.TabIndex = 10;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(445, 200);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 33);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "ID:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -162,7 +138,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(606, 200);
+            this.label2.Location = new System.Drawing.Point(400, 203);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 33);
             this.label2.TabIndex = 12;
@@ -391,6 +367,20 @@
             this.bt_cadastrar.UseVisualStyleBackColor = true;
             this.bt_cadastrar.Click += new System.EventHandler(this.bt_cadastrar_Click);
             // 
+            // bt_voltar
+            // 
+            this.bt_voltar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_voltar.BackColor = System.Drawing.Color.White;
+            this.bt_voltar.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_voltar.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.bt_voltar.Location = new System.Drawing.Point(539, 591);
+            this.bt_voltar.Name = "bt_voltar";
+            this.bt_voltar.Size = new System.Drawing.Size(163, 47);
+            this.bt_voltar.TabIndex = 32;
+            this.bt_voltar.Text = "Voltar";
+            this.bt_voltar.UseVisualStyleBackColor = false;
+            this.bt_voltar.Click += new System.EventHandler(this.bt_voltar_Click);
+            // 
             // CadastrarFunc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -398,6 +388,7 @@
             this.BackgroundImage = global::Floricultura.Properties.Resources.Rua_Alegre__123___Cidade_Brasileira_ola_grandesite_com_br__12__3456_7890_www_grandesite_com_br__8_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1272, 673);
+            this.Controls.Add(this.bt_voltar);
             this.Controls.Add(this.bt_cadastrar);
             this.Controls.Add(this.bt_limpar);
             this.Controls.Add(this.label14);
@@ -417,7 +408,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_enderecofuncionario);
             this.Controls.Add(this.txt_emailfuncionario);
             this.Controls.Add(this.txt_salario);
@@ -426,7 +416,6 @@
             this.Controls.Add(this.txt_ctpsfuncionario);
             this.Controls.Add(this.txt_rgfuncionario);
             this.Controls.Add(this.txt_nomefuncionario);
-            this.Controls.Add(this.txt_idfuncionario);
             this.DoubleBuffered = true;
             this.Name = "CadastrarFunc";
             this.Text = "Cadastrar Funcionário";
@@ -438,8 +427,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txt_idfuncionario;
         private System.Windows.Forms.TextBox txt_nomefuncionario;
         private System.Windows.Forms.TextBox txt_rgfuncionario;
         private System.Windows.Forms.TextBox txt_ctpsfuncionario;
@@ -448,7 +435,6 @@
         private System.Windows.Forms.TextBox txt_salario;
         private System.Windows.Forms.TextBox txt_emailfuncionario;
         private System.Windows.Forms.TextBox txt_enderecofuncionario;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -468,5 +454,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button bt_limpar;
         private System.Windows.Forms.Button bt_cadastrar;
+        private System.Windows.Forms.Button bt_voltar;
     }
 }

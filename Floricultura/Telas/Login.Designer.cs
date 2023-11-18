@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_senha = new System.Windows.Forms.TextBox();
+            this.bt_voltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -108,6 +109,19 @@
             this.txt_senha.Size = new System.Drawing.Size(441, 42);
             this.txt_senha.TabIndex = 8;
             // 
+            // bt_voltar
+            // 
+            this.bt_voltar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_voltar.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_voltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(160)))), ((int)(((byte)(137)))));
+            this.bt_voltar.Location = new System.Drawing.Point(177, 360);
+            this.bt_voltar.Name = "bt_voltar";
+            this.bt_voltar.Size = new System.Drawing.Size(124, 47);
+            this.bt_voltar.TabIndex = 9;
+            this.bt_voltar.Text = "Voltar";
+            this.bt_voltar.UseVisualStyleBackColor = true;
+            this.bt_voltar.Click += new System.EventHandler(this.bt_voltar_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -115,6 +129,7 @@
             this.BackgroundImage = global::Floricultura.Properties.Resources.Rua_Alegre__123___Cidade_Brasileira_ola_grandesite_com_br__12__3456_7890_www_grandesite_com2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bt_voltar);
             this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -138,5 +153,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_senha;
+        private System.Windows.Forms.Button bt_voltar;
     }
 }

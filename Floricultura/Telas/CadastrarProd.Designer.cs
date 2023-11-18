@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_idproduto = new System.Windows.Forms.TextBox();
             this.txt_categoriaproduto = new System.Windows.Forms.TextBox();
             this.txt_valorcomprado = new System.Windows.Forms.TextBox();
             this.txt_nomeproduto = new System.Windows.Forms.TextBox();
             this.txt_quantidade = new System.Windows.Forms.TextBox();
             this.txt_fonecedor = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,16 +45,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.bt_cadastrar = new System.Windows.Forms.Button();
             this.bt_limpar = new System.Windows.Forms.Button();
+            this.bt_voltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // txt_idproduto
-            // 
-            this.txt_idproduto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_idproduto.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idproduto.Location = new System.Drawing.Point(527, 231);
-            this.txt_idproduto.Name = "txt_idproduto";
-            this.txt_idproduto.Size = new System.Drawing.Size(100, 45);
-            this.txt_idproduto.TabIndex = 0;
             // 
             // txt_categoriaproduto
             // 
@@ -81,9 +71,9 @@
             // 
             this.txt_nomeproduto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_nomeproduto.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nomeproduto.Location = new System.Drawing.Point(743, 231);
+            this.txt_nomeproduto.Location = new System.Drawing.Point(527, 231);
             this.txt_nomeproduto.Name = "txt_nomeproduto";
-            this.txt_nomeproduto.Size = new System.Drawing.Size(432, 45);
+            this.txt_nomeproduto.Size = new System.Drawing.Size(648, 45);
             this.txt_nomeproduto.TabIndex = 3;
             // 
             // txt_quantidade
@@ -105,19 +95,6 @@
             this.txt_fonecedor.Size = new System.Drawing.Size(259, 45);
             this.txt_fonecedor.TabIndex = 5;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(454, 234);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 38);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "ID:";
-            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -125,7 +102,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(630, 231);
+            this.label2.Location = new System.Drawing.Point(403, 231);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 38);
             this.label2.TabIndex = 7;
@@ -197,7 +174,7 @@
             // 
             this.txt_valorfinal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_valorfinal.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_valorfinal.Location = new System.Drawing.Point(935, 434);
+            this.txt_valorfinal.Location = new System.Drawing.Point(963, 434);
             this.txt_valorfinal.Name = "txt_valorfinal";
             this.txt_valorfinal.Size = new System.Drawing.Size(124, 45);
             this.txt_valorfinal.TabIndex = 13;
@@ -267,6 +244,20 @@
             this.bt_limpar.UseVisualStyleBackColor = true;
             this.bt_limpar.Click += new System.EventHandler(this.bt_limpar_Click);
             // 
+            // bt_voltar
+            // 
+            this.bt_voltar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_voltar.BackColor = System.Drawing.Color.White;
+            this.bt_voltar.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_voltar.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.bt_voltar.Location = new System.Drawing.Point(568, 531);
+            this.bt_voltar.Name = "bt_voltar";
+            this.bt_voltar.Size = new System.Drawing.Size(163, 47);
+            this.bt_voltar.TabIndex = 35;
+            this.bt_voltar.Text = "Voltar";
+            this.bt_voltar.UseVisualStyleBackColor = false;
+            this.bt_voltar.Click += new System.EventHandler(this.bt_voltar_Click_1);
+            // 
             // CadastrarProd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -274,6 +265,7 @@
             this.BackgroundImage = global::Floricultura.Properties.Resources.Rua_Alegre__123___Cidade_Brasileira_ola_grandesite_com_br__12__3456_7890_www_grandesite_com_br__9_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1203, 637);
+            this.Controls.Add(this.bt_voltar);
             this.Controls.Add(this.bt_cadastrar);
             this.Controls.Add(this.bt_limpar);
             this.Controls.Add(this.label14);
@@ -286,13 +278,11 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_fonecedor);
             this.Controls.Add(this.txt_quantidade);
             this.Controls.Add(this.txt_nomeproduto);
             this.Controls.Add(this.txt_valorcomprado);
             this.Controls.Add(this.txt_categoriaproduto);
-            this.Controls.Add(this.txt_idproduto);
             this.DoubleBuffered = true;
             this.Name = "CadastrarProd";
             this.Text = "Cadastrar Produto";
@@ -302,14 +292,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txt_idproduto;
         private System.Windows.Forms.TextBox txt_categoriaproduto;
         private System.Windows.Forms.TextBox txt_valorcomprado;
         private System.Windows.Forms.TextBox txt_nomeproduto;
         private System.Windows.Forms.TextBox txt_quantidade;
         private System.Windows.Forms.TextBox txt_fonecedor;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -322,5 +309,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button bt_cadastrar;
         private System.Windows.Forms.Button bt_limpar;
+        private System.Windows.Forms.Button bt_voltar;
     }
 }

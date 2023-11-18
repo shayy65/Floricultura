@@ -7,7 +7,7 @@ using System.Xml.Schema;
 
 namespace Floricultura.classes
 {
-    internal class Funcionario
+    public class Funcionario
     {
         public int FuncionarioID { get; set; }
         public string Nome { get; set; }

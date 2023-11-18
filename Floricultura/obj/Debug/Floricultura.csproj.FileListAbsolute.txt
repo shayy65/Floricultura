@@ -18,9 +18,7 @@ C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre
 C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.csproj.AssemblyReference.cache
 C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.csproj.SuggestedBindingRedirects.cache
 C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.CadastroClien.resources
-C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.Form1.resources
 C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.Login.resources
-C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.Menu.resources
 C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.Properties.Resources.resources
 C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.csproj.GenerateResource.cache
 C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.csproj.CoreCompileInputs.cache
@@ -29,3 +27,5 @@ C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre
 C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.CadastrarFunc.resources
 C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.CadastrarProd.resources
 C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.Venda.resources
+C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.Inicio.resources
+C:\Users\Lenovo\Downloads\trabalhoPO2_4_bimestre-main (1)\trabalhoPO2_4_bimestre-main\Floricultura\obj\Debug\Floricultura.MenuF.resources

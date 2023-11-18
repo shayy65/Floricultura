@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Floricultura.classes
 {
-    internal class Produto
+    public class Produto
     {
-        public int Id { get; set; }
+        public int IdProduto { get; set; }
         public string Nome { get; set; }
         public string Categoria { get; set; }
         public int Quantidade { get; set; }
@@ -24,10 +24,10 @@ namespace Floricultura.classes
 
         }
 
-        public Produto(int id, double valor, string nome, string categoria, int quantidade,
+        public Produto(int idproduto, double valor, string nome, string categoria, int quantidade,
         string fornecedor)
         {
-            Id = id;
+            IdProduto = idproduto;
             Valor = valor;
             Nome = nome;
             Categoria = categoria;
